@@ -1,0 +1,6 @@
+// Run test with open browser
+npx playwright test tests --headed --project=firefox
+
+// Run codegen
+npx playwright codegen https://ccu.eton.vn/ActionCenter
+
