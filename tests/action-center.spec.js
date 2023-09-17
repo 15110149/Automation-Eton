@@ -20,6 +20,6 @@ test('Verify after login successfully redirect to action center', async ({ page 
 test('verify redirect correct link when clicking on objects <Out-of-stock> in action center', async ({ page }) => {
   await page.goto('./ActionCenter');
   await page.getByRole('link', { name: 'Đơn hàng không đủ hàng (Out-of-stock)' }).click();
-  await expect(page).toHaveURL('./SaleOrder?status=PreOrder');
+  await expect(page).toHaveURL('./SaleOrder?status=PreOrder&fromDate=&toDate=');
 });
 
